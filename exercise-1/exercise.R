@@ -8,10 +8,10 @@ my_lunch <- c("pho", "noodles", "puff")
 
 # Create a list `meals` that has contains your breakfast and lunch
 
-meals <- list(my_breakfast, my_lunch)
+meals <- list(breakfast = my_breakfast,lunch = my_lunch)
 # Add a "dinner" element to your `meals` list that has what you plan to eat 
 # for dinner
-meals[[3]] <- c("steak", "fries", "bread")
+meals$dinner <- c("steak", "fries", "bread")
 
 # Use dollar notation to extract your `dinner` element from your list
 # and save it in a vector called 'dinner'
@@ -19,9 +19,9 @@ dinner <- meals$dinner
 
 # Use double-bracket notation to extract your `lunch` element from your list
 # and save it in your list as the element at index 5 (no reason beyond practice)
-lunch <- meals[[2]]
+lunch <- meals$lunch
 meals[[5]] <- lunch
-meals[[2]] <- NULL
+
 
 # Use single-bracket notation to extract your breakfast and lunch from your list
 # and save them to a list called `early_meals`
